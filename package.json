@@ -1,0 +1,19 @@
+{
+  "name": "scramjet-articles",
+  "version": "1.0.0",
+  "description": "Posts for the Scramjet docs page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signicode/scramjet-articles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/signicode/scramjet-articles/issues"
+  },
+  "homepage": "https://github.com/signicode/scramjet-articles#readme"
+}
