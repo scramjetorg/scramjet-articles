@@ -11,7 +11,7 @@ Most time spent on debugging streams is answering the question: why doesn't it f
 
 ## Streaming speed
 
-What we need to know first is if the stream has a reason to flow. To understand that it's worth to consider reactive stream programming as a metaphore in plumbing (another good alternative is electric circutry, but I tend to prefer water over electricity).
+What we need to know first is if the stream has a reason to flow. To understand that it's worth to consider reactive stream programming as a metaphor in plumbing (another good alternative is electric circuitry, but I tend to prefer water over electricity).
 
 **A stream based program is like pipework.**
 
@@ -35,7 +35,7 @@ The stream above has an input, some transforms and an output just as piping woul
 
 In the above program we can assume that the `asyncParser` method would be our bottleneck and the limiting factor.
 
-Now let's change the program to use one point in the program to push data to two separarate transforms like this:
+Now let's change the program to use one point in the program to push data to two separate transforms like this:
 
 ```javascript
   const step = DataStream.from(process.stdin)
@@ -135,7 +135,7 @@ No chunks reach the position at all, which means that
 
 ## Reading the stream graph
 
-Each `scramjet` stream has a method called `graph` which returns a list of streams that are connected to the current instance. This can be read only one way now, but in future versions this will be more usefull.
+Each `scramjet` stream has a method called `graph` which returns a list of streams that are connected to the current instance. This can be read only one way now, but in future versions this will be more useful.
 
 A simple code helps finding where our stream originates in our code:
 
@@ -163,4 +163,4 @@ Now it's just a matter of finding your suspect.
 
 ## Summary
 
-I hope this was a good read. If you think there something to correct or add, please feel free to raise a [new issue on github](https://github.com/signicode/scramjet/issues).
+I hope this was a good read. If you think there something to correct or add, please feel free to raise a [new issue on GitHub](https://github.com/signicode/scramjet/issues).

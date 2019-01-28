@@ -4,16 +4,29 @@
   "description": "Posts for the Scramjet docs page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wg": "./scripts/write-good"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/signicode/scramjet-articles.git"
   },
-  "author": "",
+  "author": "Budleigh Salterton <cz@signicode.com>",
   "license": "ISC",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "bugs": {
     "url": "https://github.com/signicode/scramjet-articles/issues"
   },
-  "homepage": "https://github.com/signicode/scramjet-articles#readme"
+  "homepage": "https://github.com/signicode/scramjet-articles#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-scramjet": "git+https://github.com/signicode/eslint-plugin-scramjet.git",
+    "fast-glob": "^2.2.6",
+    "glob": "^7.1.3",
+    "markdown-spellcheck": "^1.3.1",
+    "scramjet": "^4.20.5",
+    "write-good": "^1.0.1"
+  }
 }

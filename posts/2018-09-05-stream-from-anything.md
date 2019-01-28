@@ -16,7 +16,7 @@ Let's start with basics:
 
 ## From another stream
 
-The idea behind `from` is to make sure our operand is a stream and if not, attempt to streamify it. In some older samples and references scramjet required the following creation:
+The idea behind `from` is to make sure our operand is a stream and if not, attempt to "streamify" it. In some older samples and references scramjet required the following creation:
 
 ```javascript
 fs.createReadStream(filePath)
@@ -45,7 +45,7 @@ This way we can make sure we can use the `scramjet` goodness on any other stream
 
 ## From iterables
 
-Another repetible use case of `scramjet` is when there's a need to asynchronously iterate over an Array - a quite common starting point of a project:
+Another repeatable use case of `scramjet` is when there's a need to asynchronously iterate over an Array - a quite common starting point of a project:
 
 ```javascript
 const countries = [
@@ -125,7 +125,7 @@ DataStream
   .pipe(fs.createWriteStream('log.txt'));
 ```
 
-So we can already pipe the data to the log even though we don't know where we'll get the stream from in the end. Anything that the function returns will get passed to another `from` and the output from that will be piped to the stream that was returned in the begining.
+So we can already pipe the data to the log even though we don't know where we'll get the stream from in the end. Anything that the function returns will get passed to another `from` and the output from that will be piped to the stream that was returned in the beginning.
 
 You can even return another function - like a redirect it will try to resolve it. Just keep in mind you can get to an infinite loop here.
 
@@ -161,4 +161,4 @@ In the second file we simply reference the relative location of the module (as w
 
 ## Summary
 
-I hope this was a good read. If you think there something to correct or add, please feel free to raise a [new issue on github](https://github.com/signicode/scramjet/issues).
+I hope this was a good read. If you think there something to correct or add, please feel free to raise a [new issue on GitHub](https://github.com/signicode/scramjet/issues).

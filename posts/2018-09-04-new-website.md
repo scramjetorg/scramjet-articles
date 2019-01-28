@@ -13,7 +13,7 @@ The docs are working pretty much as they were (old url's should be getting redir
 
 On this blog section we aim to publish examples and general ideas on using `scramjet` and tools around it. If you happen to have an interesting story or a use case you'd like us to take a look at, [please share it with us](opensource+scramjetpage@signicode.com).
 
-We'll be working on providing more features here, feel free to raise a [new issue on github](https://github.com/signicode/scramjet/issues).
+We'll be working on providing more features here, feel free to raise a [new issue on GitHub](https://github.com/signicode/scramjet/issues).
 
 ```javascript
     require('scramjet')
