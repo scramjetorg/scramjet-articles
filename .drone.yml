@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+    - name: wg
+        image: node
+        commands:
+            - npm install
