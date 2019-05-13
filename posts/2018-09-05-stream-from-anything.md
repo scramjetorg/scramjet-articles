@@ -7,8 +7,8 @@ category: "howto"
 type: "post"
 ---
 
-Streaming anything
---------------------
+Streaming anything as a node.js stream
+----------------------------------------
 
 With the introduction of `scramjet.from` and a range of static `from` methods on all Scramjet stream classes we introduced a simple way to create streams from different sources. In the same way the stream is transformed it can generated quite as simply. Here's a piece on the ways to generate your chunks in Scramjet.
 
