@@ -27,7 +27,7 @@ Every call in a program can be envisioned as pipe joint, so if we consider a sim
 
 Our plumbing looks like this:
 
-```ASCII
+```text
 stdin --> StringStream.from --> lines --> parse --> filter --> stdout
 ```
 
@@ -55,7 +55,7 @@ Now let's change the program to use one point in the program to push data to two
 
 Out plumbing looks like this:
 
-```ASCII
+```text
                                                  /--> filter --> stdout
 stdin --> StringStream.from --> lines --> parse <
                                                  \--> reduce --> await
@@ -102,7 +102,7 @@ Depending on what flow rate you'd expect you should adapt the time interval mark
 
 * In a good situation - when the source pushes, transforms return and output pulls chunks - you would expect something like this:
 
-```
+```text
 Flow rate 122 entries per second...
 Flow rate 169 entries per second...
 Flow rate 118 entries per second...
@@ -113,7 +113,7 @@ The flow may be unequal, but it keeps flowing with every second.
 
 * If the source pushes and all transforms before our `use` command work, the output will be something like this:
 
-```
+```text
 Flow rate 63 entries per second...
 Flow rate 0 entries per second...
 Flow rate 0 entries per second...
@@ -124,7 +124,7 @@ The use has seen some initial elements, but after that nothing happened.
 
 * Lastly if the source or one of the transforms before our `use` command is not working, the output will look like this:
 
-```
+```text
 Flow rate 0 entries per second...
 Flow rate 0 entries per second...
 Flow rate 0 entries per second...
